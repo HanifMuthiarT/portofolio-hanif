@@ -654,7 +654,7 @@ function App() {
                 <h4 className="text-lg font-bold text-white tracking-tight mb-4">Contact Information</h4>
                 
                 <a 
-                  href="mailto:hanif@example.com"
+                  href="mailto:hanifmuthiartsani791@gmail.com"
                   className={`p-4 border rounded-xl flex items-center gap-4 transition-all group ${
                     theme === 'dark' 
                       ? 'bg-zinc-900/40 border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900/70' 
@@ -671,7 +671,7 @@ function App() {
                   <div>
                     <p className="text-xs text-zinc-500 font-medium">Email</p>
                     <p className={`text-sm font-semibold transition-colors ${theme === 'dark' ? 'text-zinc-200 group-hover:text-white' : 'text-zinc-800 group-hover:text-black'}`}>
-                      hanif@example.com
+                      hanifmuthiartsani791@gmail.com
                     </p>
                   </div>
                 </a>
@@ -715,7 +715,7 @@ function App() {
                   <div>
                     <p className="text-xs text-zinc-500 font-medium">Location</p>
                     <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-zinc-200' : 'text-zinc-800'}`}>
-                      Bandung, West Java, Indonesia[cite: 1]
+                      Bandung, West Java, Indonesia
                     </p>
                   </div>
                 </div>
@@ -725,10 +725,10 @@ function App() {
                 <h4 className="text-lg font-bold text-white tracking-tight">Languages</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className={`text-xs px-3 py-1.5 font-medium rounded-full ${theme === 'dark' ? 'bg-zinc-900/60 text-zinc-300 border border-zinc-800' : 'bg-gray-100 text-gray-800'}`}>
-                    <span className="text-zinc-500 mr-1.5 font-mono">ID</span> Indonesian (Native)
+                    <span className="text-zinc-500 mr-1.5 font-mono">ID</span> Indonesian
                   </span>
                   <span className={`text-xs px-3 py-1.5 font-medium rounded-full ${theme === 'dark' ? 'bg-zinc-900/60 text-zinc-300 border border-zinc-800' : 'bg-gray-100 text-gray-800'}`}>
-                    <span className="text-zinc-500 mr-1.5 font-mono">GB</span> English (Professional)
+                    <span className="text-zinc-500 mr-1.5 font-mono">GB</span> English
                   </span>
                 </div>
               </div>

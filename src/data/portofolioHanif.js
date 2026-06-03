@@ -70,7 +70,7 @@ export const portofolioHanif = {
         clientName: "PT. Raharja Sinergi Komunikasi",
         desc: "Membangun sistem dashboard monitoring pengolahan data pajak berbasis web terintegrasi untuk mempermudah analisis data berkala.",
         tech: ["Laravel", "MySQL", "Bootstrap", "REST API"],
-        link: "https://github.com/username/project-pajak",
+        link: "https://github.com/HanifMuthiarT/monitoring-dashboard",
         image: new URL('../assets/Web-Monitoring.jpg', import.meta.url).href
       }
     ],
@@ -83,7 +83,13 @@ export const portofolioHanif = {
         image: [
           new URL('../assets/POS-UMKM.png', import.meta.url).href,
           new URL('../assets/POS-UMKM-2.png', import.meta.url).href,
-          new URL('../assets/POS-UMKM-3.png', import.meta.url).href
+          new URL('../assets/POS-UMKM-3.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-4.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-5.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-6.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-7.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-8.png', import.meta.url).href,
+          new URL('../assets/POS-UMKM-9.png', import.meta.url).href
         ]
       }
     ],
@@ -92,21 +98,22 @@ export const portofolioHanif = {
         title: "MindCare — Aplikasi Deteksi Tingkat Stres",
         desc: "Aplikasi mobile berbasis Android untuk memprediksi tingkat stres melalui ekspresi wajah secara real-time menggunakan kombinasi algoritma Convolutional Neural Network (MobileNetV2) dan Random Forest.",
         tech: ["Flutter", "Python", "TensorFlow", "Dart"],
-        link: "https://github.com/username/mindcare-app",
+        link: "https://github.com/HanifMuthiarT/mind_care",
         image: [
           new URL('../assets/Mind-Care.jpg', import.meta.url).href,
           new URL('../assets/Mind-Care-2.jpg', import.meta.url).href,
-          new URL('../assets/Mind-Care-3.jpg', import.meta.url).href
+          new URL('../assets/Mind-Care-3.jpg', import.meta.url).href,
+          new URL('../assets/Mind-Care-4.jpg', import.meta.url).href,
         ]
-      },
-      {
-        title: "Parking System",
-        clientName: "Universitas Langlangbuana", // Silakan isi nama client jika ada
-        desc: "Membangun sistem manajemen parkir berbasis web untuk Universitas Langlangbuana, yang mencakup fitur reservasi tempat parkir, pelacakan kendaraan untuk meningkatkan efisiensi operasional parkir kampus.",
-        tech: ["CodeIgniter3", "MySQL", "Bootstrap"], // Sesuaikan dengan tech stack asli Anda
-        link: "https://github.com/username/project-ticketing",
-        image: new URL('../assets/Web-Monitoring.jpg', import.meta.url).href
       }
+      // {
+      //   title: "Parking System",
+      //   clientName: "Universitas Langlangbuana", // Silakan isi nama client jika ada
+      //   desc: "Membangun sistem manajemen parkir berbasis web untuk Universitas Langlangbuana, yang mencakup fitur reservasi tempat parkir, pelacakan kendaraan untuk meningkatkan efisiensi operasional parkir kampus.",
+      //   tech: ["CodeIgniter3", "MySQL", "Bootstrap"], // Sesuaikan dengan tech stack asli Anda
+      //   link: "https://github.com/username/project-ticketing",
+      //   image: new URL('../assets/Web-Monitoring.jpg', import.meta.url).href
+      // }
     ]
   },
   // BAGIAN SERTIFIKAT
