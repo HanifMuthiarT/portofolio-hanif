@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #F4F4F0;
+  color: #1E1E1E;
+}
+
+/* EFESEK BERGAYA SAWERIA */
+.sw-border {
+  border: 3px solid #1E1E1E;
+  box-shadow: 6px 6px 0px 0px #1E1E1E;
+}
+
+.sw-shadow-sm {
+  box-shadow: 4px 4px 0px 0px #1E1E1E;
+}
+
+.sw-shadow {
+  box-shadow: 8px 8px 0px 0px #1E1E1E;
+}
+
+.sw-btn {
+  border: 3px solid #1E1E1E;
+  box-shadow: 4px 4px 0px 0px #1E1E1E;
+  transition: all 0.1s ease;
+}
+
+.sw-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px 0px #1E1E1E;
+}
