@@ -1,11 +1,12 @@
 // src/data/portofolioHanif.js
+import hanifAvatar from '../assets/hanif.jpg';
 
 export const portofolioHanif = {
   profile: {
     name: "Hanif Muthiar Tsani",
     headline: "Software Developer | S1 Teknik Informatika Graduate",
     bio: "Software Developer dengan fokus pada pengembangan aplikasi Web dan Mobile.Berpengalaman dalam membangun aplikasi menggunakan Laravel, Flutter, serta integrasi REST API, serta terbiasa bekerja dengan database MySQL. Memiliki kemampuan dalam problem solving, analisis sistem, dan pengembangan aplikasi dari backend maupun frontend.",
-    avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Hanif",
+    avatar: hanifAvatar,
     location: "Bandung, Jawa Barat, 40921",
     email: "hanifmuthiartsani791@gmail.com",
     phone: "+6283874227036",
