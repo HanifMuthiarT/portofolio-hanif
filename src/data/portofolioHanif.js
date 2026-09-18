@@ -52,15 +52,6 @@ export const portofolioHanif = {
         "Mengembangkan dan mendeploy aplikasi berbasis API (backend & frontend)",
         "Menggunakan layanan Google Cloud Platform (GCP) dalam pengembangan aplikasi"
       ]
-    },
-    {
-      role: "Technical Support / Intern",
-      company: "PT. Marktel",
-      date: "Juni 2021 - Januari 2022",
-      tasks: [
-        "Berkontribusi dalam pembuatan dan konfigurasi terminal server",
-        "Menghubungkan perangkat ke jaringan LAN untuk mendukung operasional"
-      ]
     }
   ],
   // BAGIAN PROJECT DIPIHA (CLIENT & PERSONAL)
@@ -73,8 +64,20 @@ export const portofolioHanif = {
         tech: ["Laravel", "MySQL", "Bootstrap", "REST API"],
         link: "https://github.com/HanifMuthiarT/monitoring-dashboard",
         image: new URL('../assets/Web-Monitoring.jpg', import.meta.url).href
+      },
+      {
+        title: "Family Heart Tracker — Aplikasi Pemantauan Kesehatan Jantung Keluarga",
+        clientName: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka ( Cloud Computing Cohort )",
+        desc: "Aplikasi berbasis web yang memungkinkan pengguna untuk memantau kesehatan jantung keluarga secara real-time, dengan fitur analisis data dan notifikasi kesehatan.",
+        tech: ["JavaScript", "REST API"],
+        link: "https://github.com/HanifMuthiarT/Family_health_Tracker",
+        image: [
+          new URL('../assets/bangkit/dashboard.png', import.meta.url).href,
+          new URL('../assets/bangkit/heart.png', import.meta.url).href
+        ]
       }
     ],
+    
     client: [
       {
         title: "POS UMKM — Sistem Manajemen Retail Offline-First",
@@ -106,15 +109,25 @@ export const portofolioHanif = {
           new URL('../assets/Mind-Care-3.jpg', import.meta.url).href,
           new URL('../assets/Mind-Care-4.jpg', import.meta.url).href,
         ]
+      },
+      {
+        title: "Perpustakaan Digital",
+        desc: "Membangun sistem manajemen perpustakaan digital berbasis web untuk memudahkan akses dan pengelolaan koleksi buku serta layanan lainnya.",
+        tech: ["Laravel", "MySQL", "Bootstrap"], // Sesuaikan dengan tech stack asli Anda
+        link: "https://github.com/username/project-ticketing",
+        image: [
+          new URL('../assets/perpus/login.png', import.meta.url).href,
+          new URL('../assets/perpus/dashboard - petugas.png', import.meta.url).href,
+          new URL('../assets/perpus/koleksi buku - petugas.png', import.meta.url).href,
+          new URL('../assets/perpus/data anggota - petugas.png', import.meta.url).href,
+          new URL('../assets/perpus/peminjaman - petugas.png', import.meta.url).href,
+          new URL('../assets/perpus/laporan - petugas.png', import.meta.url).href,
+          new URL('../assets/perpus/dashboard - pengguna .png', import.meta.url).href,
+          new URL('../assets/perpus/jelajah buku - pengguna.png', import.meta.url).href,
+          new URL('../assets/perpus/profile - pengguna.png', import.meta.url).href,
+          new URL('../assets/perpus/kartu - pengguna.png', import.meta.url).href
+        ]
       }
-      // {
-      //   title: "Parking System",
-      //   clientName: "Universitas Langlangbuana", // Silakan isi nama client jika ada
-      //   desc: "Membangun sistem manajemen parkir berbasis web untuk Universitas Langlangbuana, yang mencakup fitur reservasi tempat parkir, pelacakan kendaraan untuk meningkatkan efisiensi operasional parkir kampus.",
-      //   tech: ["CodeIgniter3", "MySQL", "Bootstrap"], // Sesuaikan dengan tech stack asli Anda
-      //   link: "https://github.com/username/project-ticketing",
-      //   image: new URL('../assets/Web-Monitoring.jpg', import.meta.url).href
-      // }
     ]
   },
   // BAGIAN SERTIFIKAT
