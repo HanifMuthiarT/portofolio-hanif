@@ -273,7 +273,7 @@ export const portofolioHanif = {
         desc: "Sistem Point of Sales (POS) berbasis web responsif yang dirancang untuk UMKM dengan arsitektur offline-first. Dilengkapi manajemen inventori stok dinamis, transaksi barcode kasir multi-role, absensi karyawan, hingga rekapitulasi laporan laba-rugi otomatis.",
         impact: "// Offline-first sync with IndexedDB, multi-role cashier & zero-latency POS",
         tech: ["React.js", "Tailwind CSS", "IndexedDB", "Node.js"],
-        link: "https://github.com/HanifMuthiarT",
+        link: "https://github.com/HanifMuthiarT/umkm-pos",
         image: [
           new URL('../assets/POS-UMKM.png', import.meta.url).href,
           new URL('../assets/POS-UMKM-2.png', import.meta.url).href,
