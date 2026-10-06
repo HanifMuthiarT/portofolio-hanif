@@ -200,7 +200,6 @@ export default function App() {
   };
 
 
-
   const openGallery = (project, index = 0) => {
     setActiveProject(project);
     setActiveImageIndex(index);
@@ -256,7 +255,7 @@ export default function App() {
         <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-md bg-[#161920] border border-[#232733] text-neutral-400 font-mono text-[11px] max-w-sm w-full justify-center">
           <span className="w-1.5 h-1.5 rounded-full bg-[#00FF66]"></span>
           <span className="text-neutral-500">https://</span>
-          <span className="text-neutral-200 font-semibold">hanifmuthiar.dev</span>
+          <span className="text-neutral-200 font-semibold">hanifmuthiartsani.dev</span>
           <span className="text-neutral-500">/portfolio</span>
         </div>
 
@@ -429,7 +428,7 @@ export default function App() {
 
             {/* Subtitle / Bio Paragraph */}
             <p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal leading-relaxed mb-8 max-w-2xl">
-              {profile.subheadline}
+              {profile.bio}
             </p>
 
             {/* Action Buttons & Status */}
