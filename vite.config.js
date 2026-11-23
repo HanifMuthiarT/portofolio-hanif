@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     watch: {
-      // File PDF sering terkunci oleh pembaca PDF; mengabaikannya mencegah
-      // Vite crash dengan EBUSY saat file dibuka di aplikasi lain.
-      ignored: ['**/*.pdf'],
+      // Folder CV berisi PDF dan file lock sementara (mis. mso*.tmp dari Word)
+      // yang sering terkunci. Mengabaikan seluruh folder mencegah Vite crash
+      // dengan EBUSY saat file dibuka di aplikasi lain.
+      ignored: ['**/public/resume/**', '**/*.pdf', '**/*.tmp'],
     },
   },
 })
