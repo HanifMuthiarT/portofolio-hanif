@@ -1,5 +1,6 @@
 // src/components/TechIcons.jsx
-import React from 'react';
+// Peta ikon statis, bukan komponen React — aturan fast-refresh tidak relevan di file ini.
+/* eslint-disable react-refresh/only-export-components */
 
 export const TechIcons = {
   // Developer Tools
@@ -30,6 +31,21 @@ export const TechIcons = {
       <path d="M8.5 17c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" fill="#FFF"/>
       <path d="m10.2 14.8 4.6-2.6" stroke="#FFF" strokeWidth="1.2" strokeLinecap="round"/>
       <path d="m11.3 9.4 3.7 2.8" stroke="#FFF" strokeWidth="1.2" strokeLinecap="round"/>
+    </svg>
+  ),
+  go: (props) => (
+    <svg viewBox="0 0 64 40" fill="none" {...props}>
+      <path d="M10 10h13M6 17h15M10 24h10" stroke="#00ADD8" strokeWidth="4" strokeLinecap="round" />
+      <path d="M33 8c-7 0-12 5-12 12s5 12 12 12 12-5 12-12S40 8 33 8Zm0 7c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5Z" fill="#00ADD8" />
+      <path d="M47 13h8M47 20h8M47 27h8" stroke="#00ADD8" strokeWidth="4" strokeLinecap="round" />
+    </svg>
+  ),
+  postgresql: (props) => (
+    <svg viewBox="0 0 32 32" fill="none" {...props}>
+      <path d="M7 10c1-5 7-7 12-5 4 1 6 5 6 10 0 4-2 8-5 10l-1 4h-4l1-5c-3 1-7 0-9-3-2-3-2-7 0-11Z" fill="#336791" />
+      <path d="M13 11c0-2 2-3 4-2 2 1 2 4 1 6-1 2-3 3-5 2" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="18" cy="12" r="1" fill="#fff" />
+      <path d="M12 20c-2 2-4 3-6 2M21 21l4 2" stroke="#336791" strokeWidth="2" strokeLinecap="round" />
     </svg>
   ),
   docker: (props) => (

@@ -1,189 +1,257 @@
 // src/data/portofolioHanif.js
+// Satu-satunya sumber konten portofolio. Semua deskripsi disimpan di sini,
+// komponen UI hanya menampilkan — jangan menulis teks permanen di JSX.
 import hanifAvatar from '../assets/hanif.jpg';
 
 export const portofolioHanif = {
   profile: {
     name: "Hanif Muthiar Tsani",
-    tagline: "/* Full Stack Developer */",
-    // headline: "I build reliable digital systems.",
-    subheadline: "A Bandung-based developer focused on building products that scale, perform, and deliver real impact. Working at the intersection of backend engineering, web, and mobile to turn complex problems into elegant solutions.",
-    bio: "Fullstack Developer dengan fokus pada pengembangan aplikasi Web dan Mobile. Berpengalaman dalam membangun arsitektur aplikasi menggunakan Laravel, React, Flutter, serta integrasi REST API, manajemen basis data MySQL berkinerja tinggi, dan orkestrasi Google Cloud Platform (GCP). Memiliki spesialisasi dalam problem solving analitis, perancangan sistem backend tangguh, dan antarmuka responsif.",
+    role: "Full Stack Developer",
+    tagline: "Full Stack Developer & Web Application Engineer",
+    headline: "Membangun aplikasi web yang rapi, cepat, dan bisa diandalkan.",
+    subheadline:
+      "Saya adalah developer asal Bandung yang bekerja di pengembangan web dan mobile. Fokus saya adalah menyusun sistem backend yang kuat, merangkai API yang jelas, dan menghadirkan antarmuka yang nyaman dipakai orang lain.",
+    bio:
+      "Fullstack Developer dengan fokus pada pengembangan aplikasi Web dan Mobile. Berpengalaman dalam membangun arsitektur aplikasi menggunakan Laravel, React, Flutter, serta integrasi REST API, manajemen basis data MySQL berkinerja tinggi, dan orkestrasi Google Cloud Platform (GCP). Memiliki spesialisasi dalam problem solving analitis, perancangan sistem backend tangguh, dan antarmuka responsif.",
     avatar: hanifAvatar,
     location: "Bandung, Jawa Barat, Indonesia",
     email: "hanifmuthiartsani791@gmail.com",
     phone: "+6283874227036",
     linkedin: "https://linkedin.com/in/hanif-muthiar-tsani-843629285",
     github: "https://github.com/HanifMuthiarT",
-    status: "Available for new projects & opportunities"
+    status: "Tersedia untuk proyek dan peluang kerja baru",
+    now: "Menyelesaikan studi S1 Teknik Informatika dan membuka diri untuk peran full-stack, backend, maupun frontend.",
+    timezone: "Asia/Jakarta",
+    timezoneLabel: "WIB (GMT+7)",
+    coreStack: ["Laravel", "React.js", "Flutter", "MySQL", "Google Cloud", "REST API"]
   },
 
-  // Tech stack & tools with categorization for creative icon display
+  // Cara kerja — dipakai di bagian "Tentang" supaya HR melihat kebiasaan kerja,
+  // bukan hanya daftar teknologi.
+  softSkills: [
+    {
+      name: "Analytical Problem Solving",
+      description: "Memecah masalah besar menjadi bagian kecil yang bisa diuji dan diukur."
+    },
+    {
+      name: "Systems Architecture",
+      description: "Merancang struktur aplikasi yang mudah dikembangkan dan dirawat."
+    },
+    {
+      name: "Cross-functional Communication",
+      description: "Menerjemahkan kebutuhan tim non-teknis menjadi spesifikasi teknis yang jelas."
+    },
+    {
+      name: "Continuous Learning & Adaptation",
+      description: "Mengikuti perubahan tooling dan praktik baru tanpa kehilangan fokus pada hasil."
+    },
+    {
+      name: "Team Collaboration & Agile",
+      description: "Bekerja dalam ritme iteratif, terbuka terhadap review, dan konsisten pada tenggat."
+    }
+  ],
+
+  // Blueprint sistem — pembeda portofolio ini. Empat lapisan kerja yang
+  // benar-benar dipakai di proyek, bukan diagram dekoratif.
+  blueprint: [
+    {
+      id: "interface",
+      number: "01",
+      label: "Antarmuka",
+      description:
+        "Menyusun halaman web dan aplikasi mobile yang responsif, dengan alur yang mudah diikuti pengguna.",
+      tools: ["React.js", "Tailwind CSS", "Flutter", "Bootstrap"]
+    },
+    {
+      id: "logic",
+      number: "02",
+      label: "API & Logika",
+      description:
+        "Membangun endpoint REST, validasi input, autentikasi, dan aturan bisnis yang tidak bercampur dengan tampilan.",
+      tools: ["Laravel", "Node.js", "REST API", "CodeIgniter 3"]
+    },
+    {
+      id: "data",
+      number: "03",
+      label: "Data",
+      description:
+        "Merancang skema relasional, query yang terukur, serta penyimpanan lokal untuk kebutuhan offline-first.",
+      tools: ["MySQL", "SQL", "IndexedDB"]
+    },
+    {
+      id: "cloud",
+      number: "04",
+      label: "Cloud & Operasi",
+      description:
+        "Menempatkan aplikasi di Google Cloud dengan konfigurasi akses, penyimpanan aset, dan alur deployment yang jelas.",
+      tools: ["Google Cloud", "Compute Engine", "Cloud Storage", "IAM"]
+    }
+  ],
+
+  // Tech stack & tools dengan kategori untuk tetap mudah dipindai.
   techStack: [
-    // Developer Tools
     {
       name: "VS Code",
       category: "tools",
       iconKey: "vscode",
-      badge: "Daily Driver",
-      description: "Primary IDE with advanced debugging, linting, and extensions"
+      badge: "Editor utama",
+      description: "Editor harian untuk debugging, linting, dan pengembangan terintegrasi."
     },
     {
       name: "Git",
       category: "tools",
       iconKey: "git",
-      badge: "Version Control",
-      description: "Branching strategies, rebase, and collaborative workflows"
+      badge: "Version control",
+      description: "Strategi branching, rebase, dan alur kerja kolaboratif."
     },
     {
       name: "GitHub",
       category: "tools",
       iconKey: "github",
-      badge: "CI/CD & Remote",
-      description: "Code hosting, pull requests, actions, and open source"
+      badge: "Kolaborasi & CI/CD",
+      description: "Hosting kode, pull request, GitHub Actions, dan kontribusi open source."
     },
     {
       name: "Postman",
       category: "tools",
       iconKey: "postman",
-      badge: "API Testing",
-      description: "API design, endpoint validation, and automated collections"
+      badge: "Pengujian API",
+      description: "Desain API, validasi endpoint, dan koleksi pengujian otomatis."
     },
     {
       name: "Google Cloud",
       category: "tools",
       iconKey: "gcp",
-      badge: "Cloud Platform",
-      description: "Compute Engine, Cloud Storage, IAM, and Serverless deployment"
+      badge: "Platform cloud",
+      description: "Compute Engine, Cloud Storage, IAM, dan deployment serverless."
     },
     {
       name: "MySQL",
       category: "tools",
       iconKey: "mysql",
-      badge: "Relational DB",
-      description: "Database design, indexing, relationships, and query optimization"
+      badge: "Database relasional",
+      description: "Desain skema, indexing, relasi, dan optimasi query."
     },
     {
       name: "Figma",
       category: "tools",
       iconKey: "figma",
-      badge: "UI/UX Design",
-      description: "Prototyping, wireframing, and design system inspection"
+      badge: "UI/UX design",
+      description: "Prototyping, wireframing, dan pemeriksaan design system."
     },
     {
       name: "Terminal & Bash",
       category: "tools",
       iconKey: "terminal",
-      badge: "DevOps / CLI",
-      description: "Shell scripting, server administration, and automation"
+      badge: "CLI & DevOps",
+      description: "Shell scripting, administrasi server, dan otomasi tugas berulang."
     },
 
-    // Programming Languages
     {
       name: "PHP",
       category: "languages",
       iconKey: "php",
-      badge: "Primary Backend",
-      description: "Object-oriented backend services and MVC architecture"
+      badge: "Backend utama",
+      description: "Layanan backend berorientasi objek dan arsitektur MVC."
     },
     {
       name: "JavaScript",
       category: "languages",
       iconKey: "javascript",
-      badge: "Core Web",
-      description: "ES6+, asynchronous programming, and DOM manipulation"
+      badge: "Bahasa web",
+      description: "ES6+, pemrograman asinkron, dan manipulasi DOM."
     },
     {
       name: "Python",
       category: "languages",
       iconKey: "python",
-      badge: "AI & Scripting",
-      description: "Data analysis, machine learning pipelines, and automation"
+      badge: "AI & scripting",
+      description: "Analisis data, pipeline machine learning, dan otomasi."
     },
     {
       name: "Dart",
       category: "languages",
       iconKey: "dart",
-      badge: "Mobile Lang",
-      description: "Cross-platform mobile app development with Flutter"
+      badge: "Bahasa mobile",
+      description: "Pengembangan aplikasi mobile lintas platform bersama Flutter."
     },
     {
       name: "HTML5",
       category: "languages",
       iconKey: "html5",
-      badge: "Semantic Web",
-      description: "Semantic structuring, SEO accessibility, and web standards"
+      badge: "Web semantik",
+      description: "Struktur semantik, SEO, aksesibilitas, dan standar web."
     },
     {
       name: "CSS3",
       category: "languages",
       iconKey: "css3",
       badge: "Styling",
-      description: "Flexbox, Grid, CSS animations, and responsive media queries"
+      description: "Flexbox, Grid, animasi, dan tata letak responsif."
     },
     {
       name: "SQL",
       category: "languages",
       iconKey: "sql",
-      badge: "Querying",
-      description: "Complex joins, aggregations, triggers, and transactions"
+      badge: "Query database",
+      description: "Join kompleks, agregasi, trigger, dan transaksi."
     },
 
-    // Frameworks & Libraries
     {
       name: "Laravel",
       category: "frameworks",
       iconKey: "laravel",
-      badge: "MVC Powerhouse",
-      description: "Eloquent ORM, robust routing, middleware, and REST APIs"
+      badge: "MVC framework",
+      description: "Eloquent ORM, routing, middleware, dan pembangunan REST API."
     },
     {
       name: "React.js",
       category: "frameworks",
       iconKey: "react",
-      badge: "Modern Frontend",
-      description: "Component architecture, hooks, state management, and SPAs"
+      badge: "Frontend modern",
+      description: "Arsitektur komponen, hooks, state management, dan SPA."
     },
     {
       name: "Flutter",
       category: "frameworks",
       iconKey: "flutter",
-      badge: "Cross-Platform",
-      description: "High-performance native mobile apps for Android & iOS"
+      badge: "Lintas platform",
+      description: "Aplikasi mobile berkinerja tinggi untuk Android dan iOS."
     },
     {
       name: "Tailwind CSS",
       category: "frameworks",
       iconKey: "tailwind",
-      badge: "Utility Styling",
-      description: "Modern, customizable, responsive design system utility engine"
+      badge: "Utility styling",
+      description: "Sistem desain utility yang dapat disesuaikan dan responsif."
     },
     {
       name: "CodeIgniter 3",
       category: "frameworks",
       iconKey: "codeigniter",
-      badge: "Lightweight MVC",
-      description: "Fast-loading lightweight PHP enterprise frameworks"
+      badge: "MVC ringan",
+      description: "Framework PHP ringan untuk aplikasi yang perlu dimuat cepat."
     },
     {
       name: "Bootstrap",
       category: "frameworks",
       iconKey: "bootstrap",
-      badge: "Responsive UI",
-      description: "Rapid prototyping and enterprise grid layouts"
+      badge: "UI responsif",
+      description: "Prototyping cepat dan tata letak grid untuk aplikasi enterprise."
     },
     {
       name: "Node.js",
       category: "frameworks",
       iconKey: "nodejs",
       badge: "Runtime",
-      description: "Scalable event-driven backend microservices and APIs"
+      description: "Backend microservices dan API yang skalabel dengan event loop."
     },
     {
       name: "REST API",
       category: "frameworks",
       iconKey: "api",
-      badge: "Integration",
-      description: "Stateless JSON endpoints, JWT auth, and webhook sync"
+      badge: "Integrasi",
+      description: "Endpoint JSON stateless, autentikasi JWT, dan sinkronisasi webhook."
     }
   ],
 
@@ -192,15 +260,17 @@ export const portofolioHanif = {
       instance: "Universitas Langlangbuana",
       degree: "S1 Teknik Informatika",
       period: "2022 - 2026",
-      details: "IPK / Cumulative GPA: 3.53 / 4.00",
-      description: "Mempelajari rekayasa perangkat lunak, algoritma & struktur data, arsitektur basis data relasional, kecerdasan buatan, serta manajemen proyek teknologi informasi."
+      details: "IPK 3.53 / 4.00",
+      description:
+        "Mempelajari rekayasa perangkat lunak, algoritma dan struktur data, arsitektur basis data relasional, kecerdasan buatan, serta manajemen proyek teknologi informasi."
     },
     {
       instance: "SMK Negeri 1 Katapang",
       degree: "Teknik Mekatronika",
       period: "2018 - 2022",
-      details: "Nilai Rata-Rata: 81.78 / 100",
-      description: "Fondasi logika sistem, pemrograman mikrokontroler, otomasi industri, dan pemecahan masalah teknis perangkat keras terintegrasi."
+      details: "Rata-rata 81.78 / 100",
+      description:
+        "Fondasi logika sistem, pemrograman mikrokontroler, otomasi industri, dan pemecahan masalah teknis perangkat keras terintegrasi."
     }
   ],
 
@@ -210,6 +280,7 @@ export const portofolioHanif = {
       company: "PT. Raharja Sinergi Komunikasi",
       date: "April 2025 - Agustus 2025",
       type: "Fullstack Engineering",
+      tech: ["Laravel", "MySQL", "Bootstrap", "REST API"],
       tasks: [
         "Mengembangkan website monitoring data pajak berbasis web (backend & frontend) dengan arsitektur modular.",
         "Membangun dan mengelola fitur sistem untuk pengolahan data agregat dan pelaporan real-time.",
@@ -220,7 +291,8 @@ export const portofolioHanif = {
       role: "Cloud Computing Cohort",
       company: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
       date: "September 2024 - Desember 2024",
-      type: "Google Certified Cohort",
+      type: "Program Bangkit Academy",
+      tech: ["Google Cloud", "Compute Engine", "Cloud Storage", "IAM"],
       tasks: [
         "Menyelesaikan program pembelajaran intensif standar industri di bidang Cloud Computing & Machine Learning Deployment.",
         "Mengembangkan dan mendeploy aplikasi berbasis microservices API pada Google Cloud Platform (GCP).",
@@ -236,10 +308,16 @@ export const portofolioHanif = {
         title: "Website Monitoring Data Pajak Daerah",
         clientName: "PT. Raharja Sinergi Komunikasi",
         origin: "instansi",
-        originLabel: "Instansi / Enterprise",
+        originLabel: "Perusahaan / Instansi",
         category: "Enterprise System",
         desc: "Membangun sistem dashboard monitoring pengolahan data pajak berbasis web terintegrasi untuk mempermudah analisis data berkala, rekapitulasi data pendapatan daerah, serta validasi berkas otomatis.",
-        impact: "// 40% faster tax reporting, automated multi-period ledger & reconciliation",
+        impact: "Pelaporan pajak menjadi 40% lebih cepat, dengan rekapitulasi dan rekonsiliasi otomatis untuk beberapa periode sekaligus.",
+        flow: [
+          { label: "Bootstrap", note: "Dashboard monitoring" },
+          { label: "Laravel", note: "Routing, validasi, agregasi" },
+          { label: "MySQL", note: "Data pajak & rekapitulasi" },
+          { label: "Laporan", note: "Ekspor & validasi berkas" }
+        ],
         tech: ["Laravel", "MySQL", "Bootstrap", "REST API"],
         link: "https://github.com/HanifMuthiarT/monitoring-dashboard",
         image: [new URL('../assets/Web-Monitoring.jpg', import.meta.url).href]
@@ -251,8 +329,14 @@ export const portofolioHanif = {
         origin: "academy",
         originLabel: "Bangkit Academy (Google)",
         category: "HealthTech & Cloud",
-        desc: "Aplikasi berbasis web & cloud yang memungkinkan pengguna untuk memantau kesehatan ritme jantung keluarga secara real-time, dilengkapi notifikasi ambang batas bahaya dan riwayat analitik medis.",
-        impact: "// Real-time BPM metrics, Google Bangkit cohort capstone distinction",
+        desc: "Aplikasi berbasis web dan cloud yang memungkinkan pengguna memantau kesehatan ritme jantung keluarga secara real-time, dilengkapi notifikasi ambang batas bahaya dan riwayat analitik medis.",
+        impact: "Metrik detak jantung real-time dan penghargaan sebagai capstone unggulan program Bangkit Academy.",
+        flow: [
+          { label: "Web app", note: "Pemantauan detak jantung" },
+          { label: "Express API", note: "Endpoint data & notifikasi" },
+          { label: "Google Cloud", note: "Compute Engine & Cloud Storage" },
+          { label: "Riwayat", note: "Grafik & ambang batas" }
+        ],
         tech: ["JavaScript", "REST API", "Google Cloud", "Express.js"],
         link: "https://github.com/HanifMuthiarT/Family_health_Tracker",
         image: [
@@ -268,10 +352,16 @@ export const portofolioHanif = {
         title: "POS UMKM — Sistem Kasir & Retail Offline-First",
         clientName: "Client Retail Project",
         origin: "client",
-        originLabel: "Client Project",
+        originLabel: "Proyek Klien",
         category: "Web Application",
         desc: "Sistem Point of Sales (POS) berbasis web responsif yang dirancang untuk UMKM dengan arsitektur offline-first. Dilengkapi manajemen inventori stok dinamis, transaksi barcode kasir multi-role, absensi karyawan, hingga rekapitulasi laporan laba-rugi otomatis.",
-        impact: "// Offline-first sync with IndexedDB, multi-role cashier & zero-latency POS",
+        impact: "Sinkronisasi offline-first dengan IndexedDB, kasir multi-role, dan transaksi yang tetap lancar tanpa koneksi.",
+        flow: [
+          { label: "React + Tailwind", note: "Kasir & inventori" },
+          { label: "IndexedDB", note: "Penyimpanan offline-first" },
+          { label: "Sinkronisasi", note: "Data kembali ke server" },
+          { label: "Laporan", note: "Laba-rugi & absensi" }
+        ],
         tech: ["React.js", "Tailwind CSS", "IndexedDB", "Node.js"],
         link: "https://github.com/HanifMuthiarT/umkm-pos",
         image: [
@@ -294,10 +384,16 @@ export const portofolioHanif = {
         title: "MindCare — Deteksi Tingkat Stres Real-Time",
         clientName: "Research & Personal Project",
         origin: "personal",
-        originLabel: "Personal & AI Research",
+        originLabel: "Proyek Pribadi & Riset AI",
         category: "AI & Mobile App",
         desc: "Aplikasi mobile Android cerdas untuk memprediksi tingkat stres melalui ekspresi wajah secara real-time, mengombinasikan Convolutional Neural Network (MobileNetV2) dengan ensemble Random Forest untuk akurasi klasifikasi tinggi.",
-        impact: "// MobileNetV2 + Random Forest, 92%+ facial emotion classification accuracy",
+        impact: "MobileNetV2 dan Random Forest dengan akurasi klasifikasi ekspresi wajah di atas 92%.",
+        flow: [
+          { label: "Kamera Flutter", note: "Input ekspresi wajah" },
+          { label: "MobileNetV2", note: "Ekstraksi fitur CNN" },
+          { label: "Random Forest", note: "Klasifikasi tingkat stres" },
+          { label: "Hasil", note: "Prediksi real-time di Android" }
+        ],
         tech: ["Flutter", "Python", "TensorFlow", "Dart"],
         link: "https://github.com/HanifMuthiarT/mind_care",
         image: [
@@ -312,10 +408,16 @@ export const portofolioHanif = {
         title: "Perpustakaan Digital — Sistem Manajemen Terpadu",
         clientName: "Academic & Campus Project",
         origin: "academy",
-        originLabel: "Academic / Campus Project",
+        originLabel: "Proyek Akademik / Kampus",
         category: "Web Application",
         desc: "Sistem manajemen perpustakaan modern berbasis web multi-role (Petugas & Pengguna) untuk memudahkan penelusuran katalog buku, sirkulasi peminjaman, tracking denda keterlambatan, serta pencetakan kartu anggota digital.",
-        impact: "// Digital cataloging, automated fine calculation & printable member RFID card",
+        impact: "Katalog digital, perhitungan denda otomatis, dan kartu anggota yang dapat dicetak.",
+        flow: [
+          { label: "Blade + Bootstrap", note: "Antarmuka petugas & pengguna" },
+          { label: "Laravel", note: "Sirkulasi & aturan denda" },
+          { label: "MySQL", note: "Katalog, anggota, peminjaman" },
+          { label: "Kartu anggota", note: "Cetak & unduh" }
+        ],
         tech: ["Laravel", "MySQL", "Bootstrap", "Blade"],
         link: "https://github.com/HanifMuthiarT/Ruang-Pustaka---Aplikasi-ManajemenPerpustakaan-Digital",
         image: [
@@ -339,7 +441,7 @@ export const portofolioHanif = {
       id: "gcp-engineer",
       title: "Menjadi Google Cloud Engineer",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Cloud Architecture & GCP Deployment",
       credentialId: "L4PQ5YW14ZO1",
       pdf: new URL('../assets/certificates/sertifikat_course_133_4067362_181124110545.pdf', import.meta.url).href,
@@ -349,7 +451,7 @@ export const portofolioHanif = {
       id: "gcp-ml",
       title: "Belajar Penerapan Machine Learning dengan Google Cloud",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Vertex AI & Cloud ML Pipelines",
       credentialId: "QLZ9V011EX5D",
       pdf: new URL('../assets/certificates/sertifikat_course_658_4067362_291124015440.pdf', import.meta.url).href,
@@ -359,7 +461,7 @@ export const portofolioHanif = {
       id: "gcp-backend",
       title: "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "REST API & Microservices on Cloud",
       credentialId: "81P244MLNZOY",
       pdf: new URL('../assets/certificates/sertifikat_course_342_4067362_281024224858.pdf', import.meta.url).href,
@@ -369,7 +471,7 @@ export const portofolioHanif = {
       id: "js-basic",
       title: "Belajar Dasar Pemrograman JavaScript",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Modern ECMAScript & Async Programming",
       credentialId: "0LZ0461LNP65",
       pdf: new URL('../assets/certificates/sertifikat_course_256_4067362_211024130344.pdf', import.meta.url).href,
@@ -379,7 +481,7 @@ export const portofolioHanif = {
       id: "se-foundation",
       title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Software Engineering Foundations",
       credentialId: "MRZME1WRLPYQ",
       pdf: new URL('../assets/certificates/sertifikat_course_237_4067362_110924010626.pdf', import.meta.url).href,
@@ -389,7 +491,7 @@ export const portofolioHanif = {
       id: "prog-logic",
       title: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Algorithm & Computational Thinking",
       credentialId: "MRZME1RD3PYQ",
       pdf: new URL('../assets/certificates/sertifikat_course_302_4067362_110924100954.pdf', import.meta.url).href,
@@ -399,7 +501,7 @@ export const portofolioHanif = {
       id: "ai-basic",
       title: "Belajar Dasar AI",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Artificial Intelligence Concepts",
       credentialId: "4EXG77JK1PRL",
       pdf: new URL('../assets/certificates/sertifikat_course_653_4067362_281024164230.pdf', import.meta.url).href,
@@ -409,19 +511,11 @@ export const portofolioHanif = {
       id: "git-basic",
       title: "Belajar Dasar Git dengan GitHub",
       provider: "Dicoding Indonesia",
-      date: "2024-2027",
+      date: "2024 - 2027",
       topic: "Version Control & GitHub",
       credentialId: "NVP7QDVN4ZR0",
       pdf: new URL('../assets/certificates/sertifikat_course_317_4067362_110924145240.pdf', import.meta.url).href,
       thumbnail: new URL('../assets/certificates/previews/sertifikat_course_317_4067362_110924145240.png', import.meta.url).href
     }
-  ],
-
-  softSkills: [
-    "Analytical Problem Solving",
-    "Systems Architecture",
-    "Cross-functional Communication",
-    "Continuous Learning & Adaptation",
-    "Team Collaboration & Agile"
   ]
 };
